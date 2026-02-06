@@ -5,7 +5,7 @@ metadata:
     app: frontend-nginx
   name: frontend-nginx
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels:
       app: frontend-nginx
@@ -17,6 +17,7 @@ spec:
       containers:
       - image: 526002960031.dkr.ecr.ap-northeast-2.amazonaws.com/k8s-cluster-repo:v2.0
         name: frontend-nginx
+
 
 
 
